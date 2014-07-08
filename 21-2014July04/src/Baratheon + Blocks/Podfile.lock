@@ -1,0 +1,13 @@
+PODS:
+  - Bitlyzer (2.0.0)
+  - UIAlertView+Blocks (0.8.1)
+
+DEPENDENCIES:
+  - Bitlyzer (~> 2.0)
+  - UIAlertView+Blocks (~> 0.8)
+
+SPEC CHECKSUMS:
+  Bitlyzer: 500afc1e76a56fd4bf3583c6847a9b7b86346eeb
+  UIAlertView+Blocks: 0b749f1f7bd5131ff2233b30a406c1585a7171b2
+
+COCOAPODS: 0.33.1

@@ -1,0 +1,3 @@
+platform :ios, '7.0'
+pod 'Bitlyzer', '~> 2.0'
+pod 'UIAlertView+Blocks', '~> 0.8'

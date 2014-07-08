@@ -1,0 +1,10 @@
+PODS:
+  - Bitlyzer (2.0.0)
+
+DEPENDENCIES:
+  - Bitlyzer (~> 2.0)
+
+SPEC CHECKSUMS:
+  Bitlyzer: 500afc1e76a56fd4bf3583c6847a9b7b86346eeb
+
+COCOAPODS: 0.33.1
