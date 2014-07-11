@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="14A283o" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kkJ-pf-PjD">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="trash" id="5JH-83-H4g">
+                                        <connections>
+                                            <action selector="clearPin:" destination="vXZ-lx-hvc" id="Khc-KZ-4nT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="GVN-IL-JPw"/>
+                                    <barButtonItem title="Remember Location" id="nlr-WQ-HYw">
+                                        <connections>
+                                            <action selector="dropPin:" destination="vXZ-lx-hvc" id="q9I-sK-c73"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="G2b-76-Q3j"/>
+                                    <barButtonItem style="plain" id="mas-0K-TMD">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="NEn-XR-zJ7">
+                                            <rect key="frame" x="274" y="7" width="22" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="c8K-P3-wF3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="KU3-2G-755"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kkJ-pf-PjD" firstAttribute="top" secondItem="c8K-P3-wF3" secondAttribute="bottom" id="1wo-Yz-gtS"/>
+                            <constraint firstAttribute="trailing" secondItem="kkJ-pf-PjD" secondAttribute="trailing" id="Q6v-H9-8VA"/>
+                            <constraint firstAttribute="bottom" secondItem="kkJ-pf-PjD" secondAttribute="bottom" id="Rh7-vd-FGK"/>
+                            <constraint firstItem="kkJ-pf-PjD" firstAttribute="trailing" secondItem="c8K-P3-wF3" secondAttribute="trailing" id="aSG-5m-7G1"/>
+                            <constraint firstItem="c8K-P3-wF3" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="poY-gv-mnW"/>
+                            <constraint firstItem="kkJ-pf-PjD" firstAttribute="leading" secondItem="c8K-P3-wF3" secondAttribute="leading" id="wTH-w1-QdI"/>
+                            <constraint firstItem="kkJ-pf-PjD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="woj-tK-fEJ"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
+                    <connections>
+                        <outlet property="mapView" destination="c8K-P3-wF3" id="NTK-GL-TdW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
