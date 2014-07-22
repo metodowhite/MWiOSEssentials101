@@ -24,14 +24,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.webView.delegate = self;
-    //    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"] isDirectory:NO]]];
     
-    //    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"export" ofType:@"pdf"] isDirectory:NO]]];
+        [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"bla" ofType:@"html"] isDirectory:NO]]];
     
-    NSString *filename = [[NSBundle mainBundle] pathForResource:@"export" ofType:@"pdf"];
-    NSURL *url = [NSURL fileURLWithPath:filename isDirectory:NO];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [_webView loadRequest:request];
+//        [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"export" ofType:@"pdf"] isDirectory:NO]]];
+    
+//    NSString *filename = [[NSBundle mainBundle] pathForResource:@"export" ofType:@"pdf"];
+//    NSURL *url = [NSURL fileURLWithPath:filename isDirectory:NO];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    [_webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning {

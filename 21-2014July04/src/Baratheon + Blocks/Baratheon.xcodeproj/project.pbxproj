@@ -13,6 +13,7 @@
 		2C335B461965C97700B5931E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C335B441965C97700B5931E /* Main.storyboard */; };
 		2C335B481965C97700B5931E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C335B471965C97700B5931E /* Images.xcassets */; };
 		2C335B541965C97700B5931E /* BaratheonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C335B531965C97700B5931E /* BaratheonTests.m */; };
+		2C93CC9419712F3400AC4A8F /* bla.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C93CC9319712F3400AC4A8F /* bla.html */; };
 		2CB8BAF91967330E00827AFB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CB8BAF81967330E00827AFB /* index.html */; };
 		2CB8BAFB196733CA00827AFB /* export.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2CB8BAFA196733CA00827AFB /* export.pdf */; };
 		3532FD953A884200BB2A94D6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4E6B4C3D0A42678C88D028 /* libPods.a */; };
@@ -43,6 +44,7 @@
 		2C335B4D1965C97700B5931E /* BaratheonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaratheonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C335B521965C97700B5931E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C335B531965C97700B5931E /* BaratheonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaratheonTests.m; sourceTree = "<group>"; };
+		2C93CC9319712F3400AC4A8F /* bla.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bla.html; sourceTree = "<group>"; };
 		2CB8BAF81967330E00827AFB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		2CB8BAFA196733CA00827AFB /* export.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = export.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +99,7 @@
 				2C335B3A1965C97700B5931E /* Supporting Files */,
 				2C335B411965C97700B5931E /* ViewController.h */,
 				2C335B421965C97700B5931E /* ViewController.m */,
+				2C93CC9319712F3400AC4A8F /* bla.html */,
 			);
 			path = Baratheon;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			files = (
 				2CB8BAFB196733CA00827AFB /* export.pdf in Resources */,
 				2CB8BAF91967330E00827AFB /* index.html in Resources */,
+				2C93CC9419712F3400AC4A8F /* bla.html in Resources */,
 				2C335B461965C97700B5931E /* Main.storyboard in Resources */,
 				2C335B481965C97700B5931E /* Images.xcassets in Resources */,
 			);
